@@ -1,18 +1,14 @@
 package abstractClasses.fragments;
 
-
 import com.codeborne.selenide.SelenideElement;
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.$$;
 import org.openqa.selenium.By;
-import utils.WebDriverWaiter;
-
 import java.util.List;
 
-public class AbstractFragment extends WebDriverWaiter {
+public class AbstractFragment {
 
     private SelenideElement rootElement;
-
-    public AbstractFragment() {
-    }
 
     public void setRootElement(SelenideElement element) {
         this.rootElement = element;
